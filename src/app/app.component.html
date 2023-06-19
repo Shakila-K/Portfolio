@@ -1,0 +1,34 @@
+<div class="navigation_container">
+  <nav class="navBar">
+    <a class="flexItem" (click)="scrollToComponent('home')">Home</a>
+    <a class="flexItem" (click)="scrollToComponent('about')">About</a>
+    <a class="flexItem" (click)="scrollToComponent('education')">Education</a>
+    <a class="flexItem" (click)="scrollToComponent('technologies')">Technologies</a>
+    <a class="flexItem" (click)="scrollToComponent('projects')">Projects</a>
+    <a class="flexItem" (click)="scrollToComponent('contact')">Contact</a>
+  </nav>
+  <nav class="toggle_view">
+    <a class="flexItem" (click)="darkMode()" ><i [ngClass]="{'bi bi-brightness-high':dark, 'bi bi-moon-fill':!dark}"></i></a>
+  </nav>
+</div>
+<div class="components_container">
+  <div class="component-container">
+    <app-home id="home"></app-home>
+  </div>
+  <div class="component-container">
+    <app-about id="about"></app-about>
+  </div>
+  <div class="component-container">
+    <app-education id="education"></app-education>
+  </div>
+  <div class="component-container">
+    <app-technologies id="technologies"></app-technologies>
+  </div>
+  <div class="component-container">
+    <app-projects id="projects"></app-projects>
+  </div>
+  <div class="component-container">
+    <app-contact id="contact"></app-contact>
+  </div>
+</div>
+<router-outlet></router-outlet>

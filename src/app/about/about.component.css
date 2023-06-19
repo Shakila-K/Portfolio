@@ -1,0 +1,42 @@
+.about_container{
+    padding-top: 7vh; 
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-items: center; /* Horizontally center the items */
+    align-items: center; /* Vertically center the items */
+    height: fit-content;
+
+}
+
+.about, .slideshow{
+    margin-top: 8%;
+}
+
+.about_grid{
+    background-color: #EAEAEA;
+    min-height: 80vh;
+    height: auto;
+    width: 45vw;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: auto;
+    justify-items: center; /* Horizontally center the items */
+    align-items: center; /* Vertically center the items */
+    padding: 5vh;
+    text-align: justify;
+}
+
+.about_grid_item{
+    padding: 10px;
+    /* font-size: 30px;
+    text-align: center; */
+}
+
+.h3{
+    font-weight: 100;
+}
+
+.description{
+    font-size: 1.1em;
+    font-weight: 300;
+}
