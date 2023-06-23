@@ -1,4 +1,83 @@
 .education_container{
-    padding-top: 7vh; /* Add padding to create space between component and navigation bar */
-    background-color: aqua;
+    padding-top: 12vh; /* Add padding to create space between component and navigation bar */
+    justify-items: center;
+    display: grid;
+    min-height: 100vh;
+    
+}
+
+.ed{
+    /* background-color: #25262B;
+    color: #EEF0F3; */
+    background-color: #EAEAEA;
+    text-align: center;
+    padding: 3vh;
+    border-radius: 50px;
+    height: 83vh;
+}
+
+.grid_container{
+    width: 60vw;
+    height: 70vh;
+    justify-self: center;
+    display: grid;
+    grid-template-columns: auto ;
+    margin: 5vh; 
+    align-items: center;   
+}
+
+.grid_element{
+    text-align: center;
+}
+
+.school{
+
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    grid-template-rows:  1fr 1fr 1fr;
+    grid-template-areas: "a b "
+                         "a c "
+                         "a d ";
+    justify-content: center;                     
+    align-items: center;
+
+    text-align: left;
+                         
+}
+
+.logo img{
+    padding: 5px;
+    height: 15vh;
+    
+    background-color: white;
+    border-radius: 20px;
+    border: solid;
+}
+
+.logo{
+    grid-area: a;
+    text-align: right;
+    margin-right: 4vw;
+
+}
+
+.title{
+    grid-area: b;
+    font-size: 1.5rem;
+    font-weight: 350;
+    
+}
+
+.duration{
+    grid-area: c;
+    font-size: medium;
+    font-weight: 300;
+    align-self: end;
+}
+
+.info{
+    grid-area: d;
+    font-size: medium;
+    font-weight: 300;
+    align-self: start;
 }

@@ -1,5 +1,5 @@
 .about_container{
-    padding-top: 7vh; 
+    padding-top: 5vh; 
     display: grid;
     grid-template-columns: auto auto;
     justify-items: center; /* Horizontally center the items */
@@ -14,9 +14,11 @@
 
 .about_grid{
     background-color: #EAEAEA;
+    /* background-color: #25262B; */
+    /* color: #EEF0F3; */
     min-height: 80vh;
     height: auto;
-    width: 45vw;
+    width: 045vw;
     border-radius: 10px;
     display: grid;
     grid-template-columns: auto;
@@ -32,11 +34,49 @@
     text-align: center; */
 }
 
+.slideshow{
+    
+    min-height: 80vh;
+    height: auto;
+    width: 33vw;
+    border-radius: 10px;
+    justify-items: center; /* Horizontally center the items */
+    align-items: center; /* Vertically center the items */
+
+    display: flex;
+    align-items: center; /* Vertical center alignment */
+    justify-content: center; /* Horizontal center alignment */
+
+    overflow: hidden;
+
+}
+
 .h3{
     font-weight: 100;
 }
 
 .description{
-    font-size: 1.1em;
+    font-size: 1.2em;
     font-weight: 300;
+}
+
+.picsum-img-wrapper {
+    height: 100%; /* Set the height to inherit from the parent */
+  }
+
+.picsum-img-wrapper img{
+    /* width: 30vw; */
+    /* max-height: 70vh; */
+
+
+    /* width: auto;
+    max-width: 33vw;; */
+
+    
+    border-radius: 5px;
+
+    max-width: 100%; /* Ensure the image doesn't exceed its original width */
+    max-height: 100%; /* Ensure the image doesn't exceed the container's height */
+    width: auto; /* Allow the image to resize its width while maintaining aspect ratio */
+    height: auto; /* Allow the image to resize its height while maintaining aspect ratio */
 }
