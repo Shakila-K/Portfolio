@@ -43,7 +43,8 @@
 .flexItem{
     flex: 1;
     padding: 15px 20px 15px 20px;
-    
+    width: 7vw;
+    text-align: center;
     text-decoration: none;
     color: inherit;
     cursor: pointer;

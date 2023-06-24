@@ -2,39 +2,41 @@
     padding-top: 12vh; /* Add padding to create space between component and navigation bar */
     justify-items: center;
     display: grid;
-    min-height: 100vh;
+    height: fit-content;
     
 }
 
 .ed{
-    /* background-color: #25262B;
-    color: #EEF0F3; */
+    
     background-color: #EAEAEA;
     text-align: center;
-    padding: 3vh;
     border-radius: 50px;
-    height: 83vh;
+    height: fit-content;
+    padding: 6vh 5vh 5vh 4vh;
+
+}
+
+.ed h2{
+    font-size: 2vw;
+    font-weight: normal;
 }
 
 .grid_container{
+    margin-top: 5vh;
     width: 60vw;
-    height: 70vh;
-    justify-self: center;
+    height: fit-content;
     display: grid;
+    gap: 5vh;
     grid-template-columns: auto ;
-    margin: 5vh; 
     align-items: center;   
+    
 }
 
-.grid_element{
-    text-align: center;
-}
 
 .school{
 
     display: grid;
-    grid-template-columns: 0.8fr 1.2fr;
-    grid-template-rows:  1fr 1fr 1fr;
+    grid-template-columns: 0.4fr 0.6fr;
     grid-template-areas: "a b "
                          "a c "
                          "a d ";
@@ -42,42 +44,47 @@
     align-items: center;
 
     text-align: left;
+
+    
                          
 }
 
 .logo img{
     padding: 5px;
-    height: 15vh;
-    
+    max-height: 15vh;  
+    width: 15vh;
     background-color: white;
     border-radius: 20px;
     border: solid;
+    border-width: 0.1vh;
 }
 
 .logo{
     grid-area: a;
     text-align: right;
-    margin-right: 4vw;
+    margin-right: 2vw;
+    /* height: 15vh;
+    width:15vh; */
 
 }
 
 .title{
     grid-area: b;
-    font-size: 1.5rem;
-    font-weight: 350;
+    font-size: 1.2vw;
+    font-weight: 300;
     
 }
 
 .duration{
     grid-area: c;
-    font-size: medium;
-    font-weight: 300;
+    font-size: 1vw;
+    font-weight: 230;
     align-self: end;
 }
 
 .info{
     grid-area: d;
-    font-size: medium;
-    font-weight: 300;
+    font-size: 1vw;
+    font-weight: 230;
     align-self: start;
 }

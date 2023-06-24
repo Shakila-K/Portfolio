@@ -1,1 +1,69 @@
-<div class="technologies_container"><p>technologies works!</p></div>
+<div class="technologies_container">
+    
+    <div class="skills">
+        <h2>My Skills</h2>
+        <div class="grid_container">
+
+                <div class="grid_item">
+                    <div class="item_title">
+                        Frontend Development
+                    </div>
+                    <div class="item_body">
+                        <img src="../../assets/images/html5.png" alt="html 5" class="logo" >
+                        <img src="../../assets/images/css3.png" alt="css 3" class="logo">
+                        <img src="../../assets/images/angular.png" alt="angular" class="logo">
+                    </div>
+                </div>
+    
+
+                <div class="grid_item">
+                    <div class="item_title">
+                        Backend Development
+                    </div>
+                    <div class="item_body">
+                        <img src="../../assets/images/springboot.png" alt="spring boot" class="logo">
+                    </div>
+                </div>
+    
+    
+                <div class="grid_item">
+                    <div class="item_title">
+                        Databases 
+                    </div>
+                    <div class="item_body">
+                        <img src="../../assets/images/mysql.png" alt="Mysql" class="logo">
+                        <img src="../../assets/images/mssql.png" alt="Ms sql" class="logo">
+                    </div>
+                </div>
+    
+        </div>
+
+        <div class="grid_container">
+            <div class="grid_item">
+                <div class="item_title">
+                    Programming Languages
+                </div>
+
+                <div class="item_body">
+                    <img src="../../assets/images/java-logo-1.png" alt="Java" class="logo">
+                    <img src="../../assets/images/python.png" alt="Python" class="logo">
+                    <img src="../../assets/images/C.png" alt="C" class="logo">
+                    <img src="../../assets/images/ts.png" alt="TypeScript" class="logo">
+                </div>
+            </div>
+        </div>
+
+        <div class="grid_container">
+            <div class="grid_item">
+                  <div class="slider">
+                    <div class="slide_track">
+                        <div class="slide" *ngFor="let image of images">
+                            <img [src]="image">
+                        </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+
+</div>

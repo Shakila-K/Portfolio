@@ -21,7 +21,6 @@ export class AboutComponent {
   @HostListener('window:resize')
   onResize() {
     this.updateHeight();
-    console.log('original'+this.originalHeight);
   }
 
   // Called when the component is initialized
@@ -33,7 +32,6 @@ export class AboutComponent {
     const nativeElement = this.aboutRef.nativeElement;
     const currentHeight = nativeElement.offsetHeight;
     
-    console.log('current'+currentHeight);
 
     // Set the original height if it hasn't been set yet
     this.originalHeight = currentHeight;
