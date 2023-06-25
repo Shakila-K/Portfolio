@@ -1,3 +1,35 @@
 <div class="contact_container">
-    <p>contact works!</p>
+    <div class="contact">
+        <h2>Contact Me</h2>
+    </div>
+    <div class="description">
+        <p>You can drop me an email using the form below. Or you can contact me using these platforms.</p>
+    </div>
+    <div class="links">
+        <div class="linkItem"><a href="https://www.linkedin.com/in/shakila-bandara/" target="_blank"><i class="bi bi-linkedin"></i></a></div>
+        <div class="linkItem"><a href="https://www.facebook.com/shakila.bandara.96" target="_blank"><i class="bi bi-facebook"></i></a></div>
+        <div class="linkItem"><a href="https://www.instagram.com/__shakila_k__/" target="_blank"><i class="bi bi-instagram"></i></a></div>
+        <div class="linkItem"><a href="https://wa.me/94717849009" target="_blank"><i class="bi bi-whatsapp"></i></a></div>
+        <div class="linkItem"><a href="https://discord.com/users/shakila_kb" target="_blank"><i class="bi bi-discord"></i></a></div>
+    </div>
+
+    <div class="form_area">
+        <form (ngSubmit)="submitForm()">
+            <div class="field">
+                <label class="label">Name</label>
+                <input type="text" name="name" class="input" placeholder="Enter your name" [(ngModel)]="name">
+            </div>
+            <div class="field">
+                <label class="label">Email</label>
+                <input type="email" name="email" class="input" placeholder="Enter your email" [(ngModel)]="email">
+            </div>
+            <div class="field">
+                <label class="label">Your message</label>
+                <textarea name="message" class="textarea" placeholder="Enter your message" [(ngModel)]="message"></textarea>
+            </div>
+            <div class="send">
+            <button type="submit" class="btn btn-secondary"><i class="bi bi-send"></i> Send</button>
+            </div>
+        </form>
+    </div>
 </div>

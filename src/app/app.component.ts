@@ -16,6 +16,7 @@ export class AppComponent {
     else{
       this.dark=false;
     }
+
     let navbar = document.querySelector(".navigation_container");
     navbar?.classList.toggle("dark");
     

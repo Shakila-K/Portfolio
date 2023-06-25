@@ -18,7 +18,7 @@ export class TechnologiesComponent {
     "../../assets/images/figma.png",
     "../../assets/images/gimp.png",
     "../../assets/images/lightroom.png",
-    
+    "../../assets/images/blender.png",
 
     "../../assets/images/windows.png",
     "../../assets/images/mac.png",
@@ -30,6 +30,7 @@ export class TechnologiesComponent {
     "../../assets/images/figma.png",
     "../../assets/images/gimp.png",
     "../../assets/images/lightroom.png",
+    "../../assets/images/blender.png",
   ];
 
 }
