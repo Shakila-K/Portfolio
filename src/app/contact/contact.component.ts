@@ -31,4 +31,8 @@ export class ContactComponent implements OnInit{
        
       });
   }
+
+  darkMode(){
+    document.querySelector(".contact_container")?.classList.toggle("dark");
+  }
 }

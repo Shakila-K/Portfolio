@@ -13,6 +13,15 @@
     padding: 6vh 5vh 5vh 4vh;
 }
 
+.dark.projects h2{
+    color: #E6E6E6;
+}
+
+.dark.projects .grid_container .grid_item{
+    background-color: #343642;
+    color: #E6E6E6;
+}
+
 .projects h2{
     font-size: 2vw;
     font-weight: normal;

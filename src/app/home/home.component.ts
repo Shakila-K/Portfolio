@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
 
+  darkMode(){
+    document.querySelector(".home_container")?.classList.toggle("dark");
+    document.querySelector(".glitch")?.classList.toggle("dark");
+  }
 }

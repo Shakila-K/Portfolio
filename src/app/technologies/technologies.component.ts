@@ -33,4 +33,8 @@ export class TechnologiesComponent {
     "../../assets/images/blender.png",
   ];
 
+  darkMode(){
+    document.querySelector(".skills")?.classList.toggle("dark");
+  }
+
 }

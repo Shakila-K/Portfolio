@@ -17,11 +17,17 @@
     /* min-height: 80vh; */
     height: auto;
     width: 045vw;
-    border-radius: 10px; 
+    border-radius: 50px; 
     justify-items: center; /* Horizontally center the items */
     align-items: center; /* Vertically center the items */
     padding: 8vh 5vh 5vh 5vh;
     text-align: center;                
+}
+
+.dark.about_grid{
+    background-color: #343642;
+    color: #E6E6E6;
+
 }
 
 .about_grid_title{

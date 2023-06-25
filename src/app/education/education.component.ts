@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class EducationComponent {
 
+  darkMode(){
+    document.querySelector(".ed")?.classList.toggle("dark");
+  }
 }

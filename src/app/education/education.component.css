@@ -16,6 +16,12 @@
 
 }
 
+.dark.ed{
+    background-color: #343642;
+    color: #E6E6E6;
+    border: #E6E6E6;
+}
+
 .ed h2{
     font-size: 2vw;
     font-weight: normal;

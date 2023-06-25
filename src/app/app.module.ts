@@ -28,7 +28,9 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     FormsModule,
     NgbModule,
   ],
-  providers: [],
+  providers: [HomeComponent, AboutComponent, EducationComponent, TechnologiesComponent, ProjectsComponent, ContactComponent],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule { 
+  
+}

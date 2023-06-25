@@ -50,4 +50,8 @@ export class AboutComponent {
     "../../assets/images/5.jpg"
   ];
 
+
+  darkMode(){
+    document.querySelector(".about_grid")?.classList.toggle("dark");
+  }
 }

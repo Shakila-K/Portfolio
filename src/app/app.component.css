@@ -23,16 +23,8 @@
 }
 
 .dark.navigation_container{
-    position: fixed;
-    top: 0;
-    left: 0;
-
-    display: flex;
-    width: 100vw;
-    height: 56px;
-    background-color: black;
-    color: white;
-
+    background-color: #16191C;
+    /* background-color: #131416; */
     box-shadow: none;
 }
 
@@ -43,7 +35,7 @@
 .flexItem{
     flex: 1;
     padding: 15px 20px 15px 20px;
-    width: 7vw;
+    width: 8vw;
     text-align: center;
     text-decoration: none;
     color: inherit;
@@ -54,12 +46,22 @@
     animation-delay: 5ms;
     background-color: lightgreen;
 }
+.dark.navigation_container .flexItem{
+    color: white;
+}
+.dark.navigation_container .flexItem:hover{
+    background-color: #093076;
+}
 
 .components_container {
     min-height: 100vh;
     height: auto;
     overflow-y: auto; /* Enable vertical scrolling */
   }
+
+.dark.components_container{
+    background-color: #1B1F23;
+}
   
 .component-container {
     min-height: 100vh; /* Ensure each component takes up the full viewport height */

@@ -13,6 +13,10 @@
     padding: 6vh 5vh 3vh 4vh;
 }
 
+.dark.contact_container{
+    color: #E6E6E6;
+}
+
 .contact h2{
     font-size: 2vw;
     font-weight: normal;
