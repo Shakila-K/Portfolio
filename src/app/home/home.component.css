@@ -55,9 +55,6 @@ a {
         color: black;
         animation: glitch-skew 0.5s infinite linear alternate-reverse;
         font-family: BEYNO;
-        src: url("../../assets/fonts/BEYNO.ttf") format('ttf'),
-             url("../../assets/fonts/BEYNO.otf") format('otf');
-
 }
 
 .glitch::after {
