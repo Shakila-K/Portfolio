@@ -283,3 +283,34 @@ a {
     transform: skew(-2deg);
   }
 }
+
+
+@media (max-width: 768px) {
+
+  .home_container{
+    padding-top: 5vh;
+  }
+
+  .title{
+    font-size: 5vw;
+    font-weight: 300;
+  }
+
+  .body{
+    font-size: 9vw;
+  }
+
+  .whoAmI{
+    font-size: 3.5vw;
+    font-weight: 200;
+  }
+
+  .linkItem{
+    flex: 1;
+    padding: 15px;
+    font-size: 3.5vw;
+    transition: transform 0.3s ease;
+    
+  }
+
+}

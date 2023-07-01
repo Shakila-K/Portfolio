@@ -83,3 +83,50 @@
     width: auto; /* Allow the image to resize its width while maintaining aspect ratio */
     height: auto; /* Allow the image to resize its height while maintaining aspect ratio */
 }
+
+@media (max-width: 768px) {
+
+    .about_container {
+        padding-top: 12vh; 
+        display: flex;
+        flex-direction: column-reverse;
+        grid-template-columns: auto;
+        align-items: top; /* Vertically center the items */
+    }
+
+    .about, .slideshow{
+        margin-top: 1%;
+    }
+    
+    .slideshow{
+        min-height: 0vh;
+        height: auto;
+        width: 80vw;
+    }
+
+    .about_grid{
+        margin-top: 2vh;
+        height: auto;
+        width: 80vw;
+        border-radius: 10px; 
+        padding: 4vh 2vh 4vh 2vh;
+        text-align: center;                
+    }
+    
+    .about_grid_title{
+        padding: 10px;
+        font-size: 5vw;
+        font-weight: normal;
+    }
+    
+    .about_grid_item{
+        padding: 10px;
+        font-size: 3vw;
+        text-align: center;
+    }
+    
+    .about_grid_item p{
+        font-weight: 230;
+    }
+
+}

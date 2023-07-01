@@ -94,3 +94,44 @@
     font-weight: 230;
     align-self: start;
 }
+
+@media (max-width: 768px) {
+
+
+    .ed{   
+        border-radius: 10px;
+        height: fit-content;
+        padding: 4vh 2vh 4vh 2vh;
+        width: 80vw;
+        
+    }    
+
+    .ed h2{
+        font-size: 5vw;
+    }
+
+    .grid_container{
+        margin-top: 5vh;
+        width: 70vw;
+    }
+
+    .school{
+        grid-template-columns: 0.3fr 0.7fr;                        
+    }
+    
+    .logo img{ 
+        width: 20vw;
+    }
+    
+    .title{
+        font-size: 3vw;
+    }
+    
+    .duration{
+        font-size: 2vw;
+    }
+    
+    .info{
+        font-size: 2vw;
+    }
+}

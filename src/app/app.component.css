@@ -34,12 +34,17 @@
 
 .flexItem{
     flex: 1;
-    padding: 15px 20px 15px 20px;
+    padding: 1vw 1vh 1vw 1vh;
     width: 8vw;
     text-align: center;
     text-decoration: none;
     color: inherit;
     cursor: pointer;
+    font-size: 1vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .flexItem:hover{
@@ -66,4 +71,42 @@
 .component-container {
     min-height: 100vh; /* Ensure each component takes up the full viewport height */
     scroll-margin-top: 7vh; /* Add margin when scrolling to top of component */
+  }
+
+.footer{
+    display: flex;
+    justify-content: center; /* Horizontal alignment */
+    align-items: center;
+    height: 8vh;
+}
+
+
+.dark.footer{
+    background-color: #1B1F23;
+    color: #EAEAEA;
+}
+
+@media (max-width: 768px) {
+    .navigation_container{
+        height: 50px;
+    }
+
+    .toggle_view{
+        height: 50px;
+    }
+
+    .flexItem{
+        flex: 1;
+        padding: 1vw 1vh 1vw 1vh;
+        width: 14vw;
+        font-size: 2vw;
+    }
+
+    .component-container {
+        min-height: 1vh;
+      }
+
+    .footer{
+        font-size: 3vw;
+    }
   }

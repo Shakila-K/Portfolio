@@ -12,7 +12,7 @@ import { AppModule } from './app.module';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
+export class AppComponent implements OnInit{
 
   constructor(
     private home: HomeComponent,
@@ -24,6 +24,10 @@ export class AppComponent {
 
   ){}
 
+  ngOnInit() {
+    this.darkMode();
+  }
+
   dark:Boolean = false; 
   
   darkMode(){
@@ -32,6 +36,7 @@ export class AppComponent {
     document.querySelector(".navigation_container")?.classList.toggle("dark");
     document.querySelector(".flexItem")?.classList.toggle("dark");
     document.querySelector(".components_container")?.classList.toggle("dark");
+    document.querySelector(".footer")?.classList.toggle("dark");
 
     this.home.darkMode();
     this.about.darkMode();

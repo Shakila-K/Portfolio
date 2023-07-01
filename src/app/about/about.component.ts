@@ -14,18 +14,27 @@ export class AboutComponent {
   @ViewChild('imageRef', { static: true }) imageRef!: ElementRef;
 
   originalHeight!: number;
+  isMobileView: boolean = false;
 
   constructor() { }
 
   // Listen for window resize events
   @HostListener('window:resize')
   onResize() {
-    this.updateHeight();
+    // this.updateHeight();
+      this.checkIfMobileView();
+      if (!this.isMobileView) {
+        this.updateHeight();
+      }
   }
 
   // Called when the component is initialized
   ngAfterViewInit() {
-    this.updateHeight();
+    // this.updateHeight();
+    this.checkIfMobileView();
+    if (!this.isMobileView) {
+      this.updateHeight();
+    }
   }
 
   updateHeight() {
@@ -35,11 +44,14 @@ export class AboutComponent {
 
     // Set the original height if it hasn't been set yet
     this.originalHeight = currentHeight;
+      // Set the height of another component (assuming it has a reference)
+      // Replace 'otherComponentRef' with the appropriate ViewChild reference
+      this.imageRef.nativeElement.style.height = `${currentHeight}px`;
     
-    
-    // Set the height of another component (assuming it has a reference)
-    // Replace 'otherComponentRef' with the appropriate ViewChild reference
-    this.imageRef.nativeElement.style.height = `${currentHeight}px`;
+  }
+
+  checkIfMobileView() {
+    this.isMobileView = window.innerWidth <= 768; // Set the max width for mobile view
   }
 
   public images: string[] = [

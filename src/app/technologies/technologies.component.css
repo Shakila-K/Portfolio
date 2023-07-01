@@ -17,7 +17,7 @@
     color: #E6E6E6;
 }
 
-.dark.skills .grid_container{
+.dark.skills .grid_container, .dark.skills .slide_container{
     /* background-color: #16191C; */
     background-color: #343642;
     color: #E6E6E6;
@@ -30,6 +30,20 @@
 }
 
 .grid_container{
+    margin-top: 5vh;
+    width: 60vw;
+    height: fit-content;
+    display: grid;
+    gap: 5vh;
+    grid-template-columns: auto ;
+    align-items: center;   
+    padding: 5vh;
+
+    background-color: #EAEAEA;
+    border-radius: 50px;
+}
+
+.slide_container{
     margin-top: 5vh;
     width: 60vw;
     height: fit-content;
@@ -109,4 +123,75 @@
 .slide img{
     height: 4vw;
     margin-right: 2vw;
+}
+
+@media (max-width: 768px) {
+
+    .technologies_container{
+        padding-top: 12vh; /* Add padding to create space between component and navigation bar */
+        justify-items: center;
+        display: grid;
+        height: fit-content;
+    }
+
+    .skills{
+        border-radius: 0px;
+        height: fit-content;
+        padding: 0;
+        width: 80vw;
+    }
+
+    .skills h2{
+        font-size: 5vw;
+    }
+
+    .grid_container{
+        margin-top: 3vh;
+        width: 80vw;
+        gap: 5vh;
+        padding: 5vh;
+        border-radius: 10px;
+    }
+
+    .grid_item{
+        grid-template-columns: 0.3fr 0.7fr;                      
+    }
+    
+    .item_title{
+        font-size: 2.5vw;
+        font-weight: 200;
+        text-align: center;
+    }
+
+    .item_body{
+        display: flex;
+    }
+    
+    .logo{
+        height: auto;
+        width: 6vw;
+        margin-left: 4vw;
+        margin-right: 0;
+    }
+
+    .slide_container{
+        margin-top: 3vh;
+        width: 80vw;
+        gap: 5vh;
+        padding: 3vh 4vw 3vh 4vw;
+        border-radius: 10px;
+    }
+
+    .slider{
+        height: fit-content;
+        width: 72vw;
+        height: 5vh;
+    }
+    
+    .slide img{
+        height: auto;
+        width: 6vw;
+        margin-right: 5vw;
+    }
+
 }

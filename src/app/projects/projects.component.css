@@ -40,7 +40,7 @@
 
 .grid_item{
     width: 30vw;
-    height: 43vh;
+    height: fit-content;
     justify-content: center;                     
     align-items: center;
 
@@ -70,7 +70,7 @@
     font-size: 1.2vw;
     font-weight: 300;
     margin-top: 2vh;
-    height: 13vh;
+    height: fit-content;
 }
 
 .logo{
@@ -81,4 +81,62 @@
 
 .logo img{
     margin-right: 1vw;
+}
+
+@media (max-width: 768px) {
+
+    .projects_container{
+        padding-top: 12vh;
+    }
+
+    .projects{
+        border-radius: 10px;
+        padding: 0;
+    }
+
+    .projects h2{
+        font-size: 5vw;
+    }
+
+    .grid_container{
+        margin-top: 5vh;
+        width: 80vw;
+        grid-template-columns: auto; 
+        border-radius: 10px;
+        gap: 5vw;
+    }
+    
+    .grid_item{
+        width: 80vw;
+        border-radius: 10px;
+        padding: 5vh;
+    
+    }
+    
+    .item_title{
+        font-size: 4vw;
+        height: fit-content;
+    }
+    
+    .role{
+        font-size: 3vw;
+        font-weight: 320; 
+        height: fit-content;
+    }
+    
+    .description{
+        font-size: 3vw;
+        font-weight: 80;
+        height: fit-content;
+    }
+    
+    .logo{
+        margin-top: 4vh;
+        display: flex;
+    }
+    
+    .logo img{
+        margin-right: 1.5vw;
+    }
+
 }

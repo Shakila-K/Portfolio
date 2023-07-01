@@ -86,3 +86,75 @@ a {
 .textarea{
     height: 15vh;
 }
+
+@media (max-width: 768px) {
+
+    .contact_container{
+        padding-top: 7vh; 
+        padding-bottom: 12vh;
+    }
+
+    .contact{
+        border-radius: 10px;
+        height: fit-content;
+        padding: 5vh 0 3vh 0;
+    }
+    
+    .contact h2{
+        font-size: 5vw;
+    }
+
+    .description{
+        width: 70vw;
+        padding: 1vh;
+    }
+
+    .description p{
+        font-size: 3vw;
+        font-weight: 300;     
+    }
+
+    .links{
+        margin: 2vh;
+    }
+    
+    .linkItem{
+        padding: 10px;
+        font-size: 5vw;
+        height: 8vh;
+    }
+
+    .form_area{
+        width: 80vw;
+    }
+    
+    .field{
+        width:70vw;
+        margin-bottom: 3vh;
+    }
+
+    .label{
+        font-size: 3vw;
+    }
+    
+    .send{
+        margin-top: 5vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .send button{
+        width: 30vw;
+    }
+    
+    .input{
+        height: auto;
+        font-size: 3vw;
+    }
+    
+    .textarea{
+        height: 15vh;
+        font-size: 3vw;
+    }
+}
